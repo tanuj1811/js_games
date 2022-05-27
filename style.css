@@ -1,0 +1,85 @@
+.containers{
+    border:1px solid;
+    width : 75%;
+    margin: 0 auto;
+    text-align:center;
+  }
+  
+  .flex-container {
+    display : flex;
+    flex-wrap  : wrap;
+    border : 1px solid blue;
+    padding : 10px;
+    justify-content : space-around;
+  }
+  
+  .flex-container div{
+    display : flex;
+    padding :10px;
+    border :1px solid black;
+    flex-wrap : wrap;
+    justify-content : space-around;
+    
+  }
+  #display{
+    /* display : flex; */
+    width: 100%;
+    padding :10px;
+    /* border :1px solid black; */
+    flex-wrap : wrap;
+    justify-content : space-around;
+  }
+  
+  #display img{
+    border:5px solid black;
+  }
+  
+  #display img:hover{
+    border:5px solid blue;
+    background-color: yellow;
+  }
+
+  /* game blackjack css */
+  .game-board{
+      /* background-color: linear-gradient(rgb(24, 83, 24),); */
+      background: linear-gradient(to bottom right, #71ff78 0%, #18721d 100%);
+      color: #ffffff;
+      display: flex;
+      flex: 1;
+      flex-wrap  : wrap;
+      /* margin: auto; */
+      border : 1px solid blue;
+      justify-content : space-around;
+  }
+
+  .game-board div{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    /* border : 1px solid rgb(252, 252, 252); */
+    padding: 10px;
+    width: 100%;
+    height:400px;
+    text-align: center;
+    
+  }
+
+  #your-cards img, #dealer-cards img{
+      /* display: flex;
+      flex-wrap: wrap; */
+      /* flex:0 1 auto; */
+      width: auto;
+      height: 25%;
+      padding: 10px;
+      justify-content : center;
+  }
+
+  #your-box, #dealer-box{
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+      border: 2px solid green;
+      flex: 1;
+      height: 500px;
+      justify-content : space-around;
+  }
+  

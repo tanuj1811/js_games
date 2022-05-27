@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's my life </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>hello world</h1>
+    <!-- <div class = "containers">
+        <h2> I can tell ur heights in cms</h2>
+        <div class = "flex-container">
+            <div class = "button"> <button type="button"  onclick="ask()">Click Me!</button> </div>
+            <div><button type="button" onclick = "reset()">reset</button></div>
+        </div>
+            <div id='result'></div>
+    </div>  -->
+
+    <div class = "containers" id="game-1">
+        <h2> Rock Paper Scissors Game :)</h2>
+        <div class = "flex-container">
+            <div id="display">
+                <img id="rock" onclick="calcResult(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc2HuD_RD_fQnKCP43G2cNB4J2P1fUkAT8Qg&usqp=CAU">
+
+                <img id="paper"  onclick="calcResult(this)" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMWsuw8I3fOLm425J7Dn5hNd48wOtYHsPMVg&usqp=CAU">
+
+                <img  id="scissor" onclick="calcResult(this)"  src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQITy_qU41MKFizX_JRZyRHRtp5x3XURpymaQ&usqp=CAU">
+            </div>
+        
+        </div>
+    </div>
+    
+    <center><h1>Next GAME</h1></center>
+    <div class="containers">
+        <h1>BlackJack</h1>
+        <h3><span id="blackjack-result">let's play</span></h3>
+        <!-- <div class = "flex-container"> -->
+            <div class="game-board">
+                <div id ="your-box" >
+                    <h2>You : <span id="your-blackjack-score">0</span></h2>
+                    <div id="your-cards"></div>
+                    
+                </div>
+                <div id ="dealer-box" >
+                    <h2>Dealer : <span id="dealer-blackjack-score">0</span></h2>
+                    <div id="dealer-cards"></div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button  id="hit-btn" class="btn-lg btn-primary m-2" onclick="hitBtn()">Hit</button>
+                <button id="stand-btn" class="btn-lg btn-warning m-2">Stand</button>
+                <button id="deal-btn" class="btn-lg btn-danger m-2" onclick="dealBtn()"> Deal</button>
+            </div>
+
+            <div class="score">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Draws</th>
+                        </tr>
+                    </thead>
+
+                     <tr>
+                        <th><span id="win">0</span></th>
+                        <th><span id="losses">0</span></th>
+                        <th><span id="draw">0</span></th>
+                    </tr>
+                </table>
+            </div>
+
+        <!-- </div> -->
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
